@@ -29,8 +29,8 @@
 
                 zeichen_layer { //1
 // -----------------------------------------------------------------------------------------
-// |  TAB |  @  |  +  |  [  |  ]  |  ?  | ! |  (  |  )  |  -  |  %  |    | BSPC |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// |  TAB |  @  |  +  |  [  |  ]  |  ?  |   |  !  |  (  |  )  |  -  |  %  | BSPC |
+// | CTRL |  *  |  &  |  {  |  }  |  ^  |   |  _  |  $  |  \  |  =  |     |      |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
@@ -46,12 +46,12 @@
 // |      |     |BSPC | UP  |DEL  |     |   |     |  1  |  2  |  3  |     |      |
 // |      |HOME |LEFT |DOWN |RIGHT|END  |   |     |  4  |  5  |  6  |     |      |
 // |      |     |     |     |     |     |   |     |  7  |  8  |  9  |     |      |
-//                    |     |     |     |   |  0  |  ,  |  .  |
+//                    |     |     |     |   |  0  |     |     |
                         bindings = <
    &trans  &trans  &kp BSPC &kp UP &kp DEL &trans   &trans &kp KP_N1  &kp KP_N2 &kp KP_N3 &trans &trans
    &trans  &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END    &trans &kp KP_N4 &kp KP_N5 &kp KP_N6  &trans &trans
    &trans &trans   &trans &trans   &trans   &trans      &trans &kp KP_N7  &kp KP_N8  &kp KP_N9 &trans &trans
-                             &trans &trans   &trans   &DE_N0   &kp COMMA    &kp DOT
+                             &trans &trans   &trans   &DE_N0   &trans &trans
                         >;
                 };
         };
