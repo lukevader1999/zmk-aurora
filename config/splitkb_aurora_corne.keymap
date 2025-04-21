@@ -16,14 +16,14 @@
                 default_layer { //0
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Z  |  U   |  I  |  O  |  P  | Ü |
-// |  ENT + n_l   |  A + z_l |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L |  Ö + z_l  |  ENT + n_l  |
+// |  ESC + n_l   |  A + z_l |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L |  Ö + z_l  |  ENT + n_l  |
 // | CTRL |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  Ä  |  ß |
 //                    | GUI | LALT | SPC |   | RSHIFT | n_l  |  |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp DE_U_UMLAUT
-   &lt 2 ENTER &lt 1 A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &lt 1 DE_O_UMLAUT &lt 2 ENTER
+   &lt 2 ESC &lt 1 A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &lt 1 DE_O_UMLAUT &lt 2 ENTER
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp DE_U_UMLAUT &kp DE_SHARP_S
-                  &kp LGUI &kp LALT &kp SPACE   &kp RET &mo 2 &trans
+                  &kp LGUI &kp LALT &kp SPACE   &kp RSHIFT &mo 2 &trans
                         >;
                 };
 
@@ -46,12 +46,12 @@
 // |      |     |BSPC | UP  |DEL  |     |   |     |  1  |  2  |  3  |     |      |
 // |      |HOME |LEFT |DOWN |RIGHT|END  |   |     |  4  |  5  |  6  |     |      |
 // |      |     |     |     |     |     |   |     |  7  |  8  |  9  |     |      |
-//                    |     |     |     |   |     |  0  |     |
+//                    |     |     |     |   |  0  |  ,  |  .  |
                         bindings = <
    &trans  &trans  &kp BSPC &kp UP &kp DEL &trans   &trans &kp KP_N1  &kp KP_N2 &kp KP_N3 &trans &trans
    &trans &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END    &trans &kp KP_N4 &kp KP_N5 &kp KP_N6  &trans &trans
    &trans &trans   &trans &trans   &trans   &trans      &trans &kp KP_N7  &kp KP_N8  &kp KP_N9 &trans &trans
-                             &trans &trans   &trans   &kp KP_N0   &trans    &trans
+                             &trans &trans   &trans   &KP_N0   &kp COMMA    &kp DOT
                         >;
                 };
         };
